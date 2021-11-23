@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <span class="nav-icon" id="btnMenu"><i class="fas fa-bars"></i> TecnoTandil</span>
+        <div class="encabezado" id="encabezado">
+            <a href="index.html"><h1 class="titulo">TecnoTandil</h1></a>
+            <ol class="botonera"> 
+                <a href="index.html"><li class="botones">Inicio</li></a>
+                <a href="Hardware.html"><li class="botones">Hardware</li></a>
+                <a href="ingresar.html"><li class="botones">Ingresar</li></a>
+            </ol>    
+        </div>
+    </header>
+   
+    <h1 class="registrese">Registrese</h1>
+    <hr>
+    
+    <article class="article-inscripcion">
+        <form id="form">
+            <div class="divForm">
+                <input type="text" name="input-nombre" placeholder="Nombre" value="">
+            </div>
+            <div class="divForm">
+                <input type="text" name="input-apellido"  placeholder="Apellido" value="">
+            </div>
+            <div class="divForm">
+                <input type="email" name="input-email" placeholder="E-mail" name="" value="">
+            </div>
+            <div class="divForm">
+                <input type="number" name="input-dni" minlength="6" placeholder="DNI" value="">
+            </div>
+            <div class="divForm">
+                <input type="text" placeholder="Usuario" value="">
+            </div>
+            <div class="divForm">
+                <input type="password" placeholder="Contraseña" name="" value="">
+            </div>
+            
+            <div class="cargarform">
+                <button id="btn-cargar">Cargar</button>
+                <button id="btn-cargarx3">Cargarx3</button>
+                <button id="btn-modificar-ultimo">Modificar Ultimo</button>
+            </div>
+            
+            <div class="captcha">
+                <div id="parrafo"></div>
+                <input type="text" id="texto" value="">
+                <button id="btn">Recargar</button>
+                <button id="verificar">Verificar</button>
+                <p id="valor"></p>
+            </div>
+        </form>
+    </article>
+
+    <aside>
+        <table id="table-inscription">
+            <thead>
+                <tr id="fila-head">
+                  
+                </tr>
+            </thead>
+            <tbody id="body-table">   
+
+            </tbody>   
+            <tfoot>
+                <td><button id="reset">Eliminar</button></td>
+                <td><button id="borrar-ultimo">Borrar Ultimo Inscripto</button></td>
+            </tfoot>
+        </table>
+    </aside>
+
+    <footer>TecnoTandil &copy; 2021</footer>
+
+    <!-- <script type="text/javascript" src="js/tabla.js"></script>-->
+    <script type="text/javascript" src="js/captcha.js"></script>
+    <script type="text/javascript" src="js/captcha.js"></script>
+    <!-- <script src="js/intento.js"></script>-->
+    <script src="js/intento2.js"></script>
+    
+    <script src="js/menu.js"></script>
+</body>
+</html>

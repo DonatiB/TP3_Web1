@@ -1,0 +1,365 @@
+
+body{
+    margin: 0px;
+    background-color: #232347;   
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+/* Header */
+.encabezado{
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    background-color: black;
+}
+.mostrarEncabezado{
+    display: flex;
+}
+.nav-icon{
+    height: 20%;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding: 0.5rem;
+}
+.titulo{
+    display: none;
+    font-size: medium;
+}
+.nav-icon{
+    visibility: visible;
+}
+.botonera{
+    flex-direction: column;   
+}
+.botones{
+    color: whitesmoke;
+    list-style: none;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+:hover.botones{
+    background-color: #232347;
+    box-shadow: 0 0 10px #232347, 0 0 40px #232347, 0 0 80px #232347 ;        
+}   
+header img{
+    display: none;
+    visibility: collapse;
+}
+img{
+    width: 100%;   
+}
+.masvendidos, .registrese{
+    text-transform: uppercase;
+    color: aqua;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    margin-top: 3%;
+}
+hr{
+    width: 40%;
+    border-color: rgb(0, 255, 234);
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+/* Body en  INDEX*/
+.paquetes{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    
+}
+.cuadro, .cuadro2{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(102, 100, 247);
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur(4px);   
+}
+.cuadro:hover, .cuadro2:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(36, 47,  194, 0.39), 0 0 40px rgba(36, 47,  194, 0.39), 0 0 80px rgba(36, 47,  194, 0.39) ;       
+}
+.precio{
+    font-size: 1000%;
+    color:  aqua;   
+}
+li{
+    text-align: left;
+    font-size: 20px;
+    list-style: none;
+    margin-right: 10px;   
+}
+.images{
+    background-color: white;
+    height: 300px;  
+}
+
+/* Body en HARDWARE */    
+.cuadro2{ 
+    display: flex;
+    flex-wrap: wrap;       
+    font-style: oblique;
+    font-size: 3px;
+}
+li.circle{
+    list-style-type: circle;
+}
+
+
+/* Agrupo los botones del formulario para que se vean de forma correcta  */
+#mod{
+    flex-direction: column;
+            
+}
+#texto{
+    margin-bottom: 5%;
+}
+
+        
+/* Formulario en INGRESAR*/
+.article-inscripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+#form{
+    width: 80%;
+    height: 60%;
+    border: solid #fafafa 1px;
+    background-color:white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.divForm{
+    font-weight: lighter;
+    display: flex;
+    margin: 5% 5% 3% 5%;
+    border-bottom: solid #00ffea 1px ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.divForm input{
+    margin: 1%;
+    height: 2rem;
+    width: 90%;
+    border: none;
+}
+
+/* Captcha en INGRESAR*/
+.captcha{
+    font-size: 70%;
+    font-weight: lighter;
+    margin: 1%;
+}
+.captcha input{
+    width: 90%;
+    height: 3rem;
+    font-size: 200%;
+    border-radius: 1rem;
+    margin: 0rem 1rem 1rem;
+    border: solid rgb(1, 238, 179) 1px;
+}
+.divForm button{
+    border: solid rgb(7, 252, 252) 0.1rem;
+    color: rgb(0, 5, 4);
+    border-radius: 0.5em;
+    padding: 1%;
+}
+#btn, #verificar, #btn-cargar, #btn-cargarx3, #reset, #btn-modificar-ultimo{
+    height: 2em;
+    border: solid rgb(7, 252, 252) 0.1rem;
+    color: rgb(3, 112, 85);
+    padding: 0.3em;
+}
+.cargarform{
+    padding: 0;
+    display: flex;
+    justify-content: center;   
+}
+#parrafo{
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    font-family: fantasy, 'Times New Roman', Times, serif;
+    width: 100%;
+    
+}
+#valor{
+    margin: 1%;
+}
+.rojo{
+    color: rgb(12, 1, 1);
+}
+.verde{
+    color: rgb(8, 113, 121);
+}
+div.formulario form .divForm h2{
+    width: 40%;
+}
+
+/* Tabla Dinamica en INGRESAR */
+table, thead, tbody, tr{
+    border:solid #06ffc1 1px;   
+}
+table{      
+    width: 100%;
+    height: 80vh;   
+    text-align: center;  
+    margin: 3em 0;
+    color: rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+tr{
+    width: 100%;  
+    border-collapse: collapse;
+}
+td{ 
+    max-width: 1em;
+    max-height: 20%;
+    overflow: hidden;
+    overflow-x: scroll;   
+}
+thead{
+    font-size: 130%;
+    background-color: rgb(3, 30, 48);
+    color: rgb(0, 204, 136);
+}
+thead tr{
+    height: 15vh;
+}
+tbody tr:hover{
+    background-color:rgb(61, 179, 214) ;
+    color: white;
+}
+tbody{
+    background-color: rgb(125, 218, 194);
+    font-size: 130%;
+}
+
+
+/* Tabla en INDEX (no dinamica) */
+.tabla-index{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.tabla-index table{
+    background-color: white;
+    text-align: left;
+    width: 96%;
+    margin: auto;
+    border-collapse: collapse;
+}
+.tabla-index th, td{
+    padding: 10px 20px; 
+}
+.tabla-index tr:nth-child(even){
+    background-color: #ddd;
+}
+.tabla-index tr:hover  {
+    background-color:rgb(68, 106, 163) ;
+    color: white;  
+}
+
+/* Footer general */
+footer{
+    background-color: black;
+    margin-top: 2%;
+    text-align: right;
+    color: blanchedalmond;   
+}
+
+
+@media only screen and (min-width: 600px){  
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;          
+    }
+    .botonera{
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo{
+        display: inline-block;
+        transition: 0.5s;
+        margin: 0.5em;
+        color: whitesmoke;
+        font-size: 300%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav-icon{
+        visibility: hidden;
+        display: none;
+    }    
+    header img{    
+        display: block;   
+        visibility: visible
+    }
+    img{
+        width: 100%;  
+    }
+       
+    /* Body index */    
+    .paquetes{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-top: 3%;
+        margin-bottom: 3%;    
+    } 
+    .cuadro{   
+        width: 22%;          
+    }          
+    .tabla-index table{   
+        width: 70%;
+    }        
+    td{ 
+        overflow: visible;
+    }
+    .cuadro2{
+        width: 20%;
+        height: 500px;
+        margin: 5% 5%s;
+        text-align: left;  
+        font-style: oblique;   
+        margin: 30px;  
+    }
+    .images2{
+        background-color: white;
+        height: 200px;  
+    }
+
+    #form{
+        width: 50%;
+        height: 100vh;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+    }
+    table{
+        width: 70%;
+    }
+    
+
+}
